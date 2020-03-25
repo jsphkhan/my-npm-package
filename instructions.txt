@@ -24,3 +24,16 @@ npm unpublish <package-name> -f
 Versioning
 --------------
 https://docs.npmjs.com/about-semantic-versioning
+
+npm version 1.1.0
+or
+npm version minor, npm version major, npm version patch
+
+This will update the version inside package.json
+
+After that publish it to NPM
+
+
+Pending
+--------
+Minify, Unit Test, & Publish a lib version, use Travis CI
