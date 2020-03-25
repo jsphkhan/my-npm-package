@@ -18,7 +18,19 @@ const multiply = (a, b) => {
     return a * b;
 }
 
+
+/** 
+ * Subtract two numbers
+ * @param a {Number}
+ * @param b {number}
+ * @returns {Number}
+*/
+const subtract = (a, b) => {
+    return a - b;
+}
+
 module.exports = {
     sum: sum,
-    multiply: multiply
+    multiply: multiply,
+    subtract: subtract
 }
