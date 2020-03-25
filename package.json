@@ -1,0 +1,19 @@
+{
+  "name": "@jsphkhan/my-npm-package",
+  "version": "1.0.0",
+  "description": "My first NPM package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsphkhan/my-npm-package.git"
+  },
+  "author": "Joseph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsphkhan/my-npm-package/issues"
+  },
+  "homepage": "https://github.com/jsphkhan/my-npm-package#readme"
+}

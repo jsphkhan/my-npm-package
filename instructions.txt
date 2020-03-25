@@ -1,0 +1,19 @@
+My simple NPM package that I created to publish on NPM registry
+
+This is a public NPM package - https://www.npmjs.com/package/@jsphkhan/my-npm-package
+
+This is a scoped package - means I have scoped it to my NPM username to prevent conflicts
+Eg. somebody else might have already published a package with same name.
+
+Publish a scoped public package
+----------------------------------
+https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
+
+npm init --scope=@my-username
+npm publish --access public
+
+Unpublish a public page:
+---------------------------
+https://docs.npmjs.com/unpublishing-packages-from-the-registry
+
+npm unpublish <package-name> -f
