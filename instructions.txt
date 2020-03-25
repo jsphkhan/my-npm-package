@@ -39,6 +39,8 @@ Tests
 JEST -> ./_tests
 yarn test
 
+Install JEST as dev dependencies: yarn add --dev jest
+
 
 Important
 -------------
