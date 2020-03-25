@@ -34,6 +34,16 @@ This will update the version inside package.json
 After that publish it to NPM
 
 
+Tests
+---------
+JEST -> ./_tests
+yarn test
+
+
+Important
+-------------
+When somebody installs my package, the dev dependencies are not installed for him
+
 Pending
 --------
 Minify, Unit Test, & Publish a lib version, use Travis CI
