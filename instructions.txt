@@ -58,6 +58,8 @@ the commit and the continuous integration passes.
 
 https://hungryturtlecode.com/projects/parallax-deploy-npm/
 
+Check Travis YML error online - https://config.travis-ci.com/explore
+
 
 Tests
 ---------
