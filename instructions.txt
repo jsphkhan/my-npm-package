@@ -37,7 +37,7 @@ This command performs the following tasks:
 2. create a new commit
 3. create a git tag
 
-Git push your changes to Github and create a release TAG: git push origin master --tag
+Git push your changes to Github and create a release TAG: git push --tag
 
 
 After that publish it to NPM directly: npm publish
@@ -74,6 +74,11 @@ Code Coverage:
 I am using JEST for Coverage
 
 yarn coverage 
+
+Setting up ESLint, Prettier, Husky, lint-staged
+--------------------------------------------------
+https://hungryturtlecode.com/projects/eslint-husky-parallax/
+
 
 
 Important

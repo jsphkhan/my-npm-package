@@ -1,4 +1,4 @@
-const { sum, multiply, subtract, remainder } = require('../index');
+const { sum, multiply, subtract } = require('../src/index');
 
 test('1 + 2 should be 3', () => {
     expect(sum(1, 2)).toBe(3);
