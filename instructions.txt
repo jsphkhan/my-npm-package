@@ -42,8 +42,8 @@ Git push your changes to Github and create a release TAG: git push origin master
 
 After that publish it to NPM directly: npm publish
 If you are using Travis CI: see .travis.yml file
-    Travis listens to Github repo events. Whenever a push or tag is created, it will trigger a build. 
-    That build will publish to NPM. 
+    Travis listens to Github repo events. Whenever a commit or tag is created, it will trigger a build. 
+    Travis will publish to NPM repo only when a Github Tag is generated. 
 
 Travis CI
 --------------
@@ -58,6 +58,7 @@ the commit and the continuous integration passes.
 
 https://hungryturtlecode.com/projects/parallax-deploy-npm/
 
+Sometimes Travis build does not start due to error in travis.yml file:
 Check Travis YML error online - https://config.travis-ci.com/explore
 
 
@@ -68,6 +69,12 @@ yarn test
 
 Install JEST as dev dependencies: yarn add --dev jest
 
+Code Coverage:
+----------------
+I am using JEST for Coverage
+
+yarn coverage 
+
 
 Important
 -------------
@@ -75,4 +82,7 @@ When somebody installs my package, the dev dependencies are not installed for hi
 
 Pending
 --------
-Minify, Unit Test, Babel, & Publish a lib version, use Travis CI
+Build package for production (./lib or ./dist folder) - PENDING
+Unit Test - done
+Code coverage - done.
+Use Travis CI to publish NPM package - done
