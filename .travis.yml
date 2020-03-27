@@ -6,7 +6,7 @@ install:
     - yarn install
 jobs:
     include:
-        - stage: Test my package
+        - stage: Build and test
         script:
             - yarn test
             - yarn coverage
