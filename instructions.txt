@@ -45,6 +45,19 @@ If you are using Travis CI: see .travis.yml file
     Travis listens to Github repo events. Whenever a push or tag is created, it will trigger a build. 
     That build will publish to NPM. 
 
+Travis CI
+--------------
+We don’t want to deploy to NPM on every single commit. 
+Instead we will use the git tag system and only deploy 
+when we tag a commit as a new version. That leaves us 
+free to push as many commits as we want and travis will 
+run the CI against every one of them to make sure that 
+the repo builds and the tests pass. However it will only 
+trigger a deployment to NPM if a new tag is present on 
+the commit and the continuous integration passes.
+
+https://hungryturtlecode.com/projects/parallax-deploy-npm/
+
 
 Tests
 ---------
