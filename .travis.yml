@@ -4,12 +4,3 @@ node_js:
 cache: yarn
 install: 
     - yarn install
-jobs:
-    include:
-        - stage: Build and test
-        script:
-            - yarn test
-            - yarn coverage
-branches:
-    only:
-        - master
