@@ -1,6 +1,6 @@
 {
   "name": "@jsphkhan/my-npm-package",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "My first NPM package",
   "main": "index.js",
   "scripts": {
