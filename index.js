@@ -40,9 +40,20 @@ const divide = (a, b) => {
     return a / b;
 }
 
+/** 
+ * Modulus
+ * @param a {Number}
+ * @param b {number}
+ * @returns {Number}
+*/
+const remainder = (a, b) => {
+    return a % b;
+}
+
 module.exports = {
     sum: sum,
     multiply: multiply,
     subtract: subtract,
-    divide: divide
+    divide: divide,
+    remainder: remainder
 }

@@ -30,14 +30,20 @@ npm version 1.1.0
 or
 npm version minor, npm version major, npm version patch
 
-This will update the version inside package.json
+This command performs the following tasks:
+1. bump (update) the version number in package.json
+2. create a new commit
+3. create a git tag
+
+Git push your changes to Github and create a release TAG: git push origin master --tag
+
 
 After that publish it to NPM
 
 
 Tests
 ---------
-JEST -> ./_tests
+I am using JEST -> ./_tests
 yarn test
 
 Install JEST as dev dependencies: yarn add --dev jest
