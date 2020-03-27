@@ -4,9 +4,14 @@ node_js:
 
 script: echo "Running tests against $(node -v) ..."
 
-deploy:
-    provider: npm
-    email: $NPM_EMAIL
-    api_key: $NPM_TOKEN
-    on:
-        tags: false
+jobs:
+    include:
+      - stage: npm release
+        node_js: "10.16.0"
+        script: echo "Deploying to npm ..."
+        deploy:
+            provider: npm
+            email: $NPM_EMAIL
+            api_key: $NPM_TOKEN
+            on:
+                tags: false
