@@ -29,8 +29,20 @@ const subtract = (a, b) => {
     return a - b;
 }
 
+
+/** 
+ * Divide two numbers
+ * @param a {Number}
+ * @param b {number}
+ * @returns {Number}
+*/
+const divide = (a, b) => {
+    return a / b;
+}
+
 module.exports = {
     sum: sum,
     multiply: multiply,
-    subtract: subtract
+    subtract: subtract,
+    divide: divide
 }

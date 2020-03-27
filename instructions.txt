@@ -11,7 +11,8 @@ Publish a scoped public package
 https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
 
 npm init --scope=@my-username
-npm publish --access public
+npm publish --access public - for first time
+npm publish - next time onwards
 
 
 Unpublish a public page:
