@@ -7,16 +7,6 @@ install:
 script:
     - yarn test
     - yarn coverage
-jobs:
-    include:
-        - stage: npm release
-        deploy:
-            provider: npm
-            email: $NPM_EMAIL
-            api_key: $NPM_TOKEN
-            skip_cleanup: true
-            on:
-                tags: true
 branches:
     only:
         - master
