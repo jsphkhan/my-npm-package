@@ -1,6 +1,7 @@
 # my-npm-package
 Test Custom NPM package publish
 
+### Travis Build Badge
 [![Build Status](https://travis-ci.org/jsphkhan/my-npm-package.svg?branch=master)](https://travis-ci.org/jsphkhan/my-npm-package)
 
 ### TLDR
