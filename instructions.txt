@@ -94,7 +94,7 @@ When somebody installs my package, the dev dependencies are not installed for hi
 
 Pending
 --------
-Build package for production (./lib or ./dist folder) - PENDING
+Build package for production (./lib or ./dist folder) - done
 Unit Test - done
 Code coverage - done.
-Use Travis CI to publish NPM package - done
+Use Travis CI to publish NPM package - done (Build error coming)
