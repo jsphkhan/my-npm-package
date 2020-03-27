@@ -75,10 +75,17 @@ I am using JEST for Coverage
 
 yarn coverage 
 
+
 Setting up ESLint, Prettier, Husky, lint-staged
 --------------------------------------------------
 https://hungryturtlecode.com/projects/eslint-husky-parallax/
 
+
+Setting up Babel to produce production dist
+----------------------------------------------
+https://medium.com/@imranhsayed/install-and-set-up-babel-for-your-project-a6ce1fc37633
+
+@babel/core @babel/cli @babel/preset-env
 
 
 Important

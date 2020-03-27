@@ -4,9 +4,9 @@
   "description": "My first NPM package",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "build": "build my package",
+    "test": "jest ./_tests",
+    "coverage": "jest --coverage ./_tests",
+    "build": "./node_modules/.bin/babel src -d dist",
     "lint": "eslint --fix"
   },
   "repository": {
@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/jsphkhan/my-npm-package#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.8.2",
     "husky": "^4.2.3",
@@ -31,6 +34,7 @@
       "npm test",
       "npm run coverage",
       "npm run lint",
+      "npm run build",
       "git add"
     ]
   },
