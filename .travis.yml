@@ -4,9 +4,12 @@ node_js:
 cache: yarn
 install: 
     - yarn install
-script:
-    - yarn test
-    - yarn coverage
+jobs:
+    include:
+        - stage: Test my package
+        script:
+            - yarn test
+            - yarn coverage
 branches:
     only:
         - master
