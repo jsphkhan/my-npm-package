@@ -1,6 +1,6 @@
 {
   "name": "@jsphkhan/my-npm-package",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "My first NPM package",
   "main": "dist/index.js",
   "scripts": {
@@ -42,5 +42,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
