@@ -98,3 +98,15 @@ Build package for production (./lib or ./dist folder) - done
 Unit Test - done
 Code coverage - done.
 Use Travis CI to publish NPM package - done (Build error coming)
+
+
+NPM has merged with Github, so from now packages can be published to Github
+------------------------------------------------------------------------------
+// Step 1: Use `publishConfig` option in your package.json
+"publishConfig": { "registry": "https://npm.pkg.github.com/" }
+
+// Step 2: Authenticate (you have to generate personal dev access token from inside Github)
+$ npm login --registry=https://npm.pkg.github.com/
+
+// Step 3: Publish
+$ npm publish
