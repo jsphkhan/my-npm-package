@@ -43,7 +43,8 @@ Git push your changes to Github and create a release TAG: git push --tag
 After that publish it to NPM directly: npm publish
 If you are using Travis CI: see .travis.yml file
     Travis listens to Github repo events. Whenever a commit or tag is created, it will trigger a build. 
-    Travis will publish to NPM repo only when a Github Tag is generated. 
+    Travis will publish to NPM repo only when a Github Tag is generated. This is to prevent unnecessary
+    publish when developers make code commits. Only releases/tags need to be published
 
 Travis CI
 --------------
@@ -110,3 +111,6 @@ $ npm login --registry=https://npm.pkg.github.com/
 
 // Step 3: Publish
 $ npm publish
+
+Once you start publishing to Github packages, it does not publish to NPM registry. Because you have
+modified the publish config to point to Github packages.
