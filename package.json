@@ -34,13 +34,13 @@
       "npm test",
       "npm run coverage",
       "npm run lint",
-      "npm run build",
-      "git add"
+      "npm run build"
     ]
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
