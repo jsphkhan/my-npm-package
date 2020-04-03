@@ -15,6 +15,16 @@ npm publish --access public -> for first time
 npm publish -> next time onwards
 
 
+Test package locally before publish
+-------------------------------------
+you can install the package locally inside your project
+
+npm install --save /full_local_path_to_package
+yarn add /full_local_path_to_package
+
+Once you publish the packge you can use the usual npm/yarn commands to install
+
+
 Unpublish a public page:
 ---------------------------
 https://docs.npmjs.com/unpublishing-packages-from-the-registry
