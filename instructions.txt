@@ -45,9 +45,10 @@ or npm version patch -m “auto comment” -> versioning with comment
 This command performs the following tasks:
 1. bump (update) the version number in package.json
 2. create a new commit
-3. create a git tag
+3. create a git tag or a release.
 
 Git push your changes to Github and create a release TAG: git push --tag
+Git push only tags: git push --tags
 
 
 After that publish it to NPM directly: npm publish
