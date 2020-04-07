@@ -53,11 +53,22 @@ var divide = function divide(a, b) {
 var remainder = function remainder(a, b) {
   return a % b;
 };
+/** 
+ * Square function
+ * @param a {Number}
+ * @returns {Number}
+*/
+
+
+var square = function square(a) {
+  return a * a;
+};
 
 module.exports = {
   sum: sum,
   multiply: multiply,
   subtract: subtract,
   divide: divide,
-  remainder: remainder
+  remainder: remainder,
+  square: square
 };
