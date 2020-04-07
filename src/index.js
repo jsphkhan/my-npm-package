@@ -50,20 +50,10 @@ const remainder = (a, b) => {
     return a % b;
 }
 
-/** 
- * Square function
- * @param a {Number}
- * @returns {Number}
-*/
-const square = (a) => {
-    return a*a;
-}
-
 module.exports = {
     sum: sum,
     multiply: multiply,
     subtract: subtract,
     divide: divide,
-    remainder: remainder,
-    square: square
+    remainder: remainder
 }
