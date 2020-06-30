@@ -47,7 +47,7 @@ This command performs the following tasks:
 2. create a new commit
 3. create a git tag or a release.
 
-Git push your changes to Github and create a release TAG: git push --tag
+Git push your changes to Github and create a new release TAG simultaneously: git push && git push --tags
 Git push only tags: git push --tags
 
 
@@ -111,6 +111,7 @@ https://medium.com/@imranhsayed/install-and-set-up-babel-for-your-project-a6ce1f
 Important
 -------------
 When somebody installs my package, the dev dependencies are not installed for him
+Only dependencies will be downloaded
 
 Pending
 --------
