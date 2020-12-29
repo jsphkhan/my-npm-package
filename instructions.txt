@@ -5,6 +5,9 @@ This is a public NPM package - https://www.npmjs.com/package/@jsphkhan/my-npm-pa
 This is a scoped package - means I have scoped it to my NPM username to prevent conflicts
 Eg. somebody else might have already published a package with same name.
 
+I installed express as a dependency to test, when a project installs my package
+where and how express is downloaded.
+
 
 Publish a scoped public package
 ----------------------------------
