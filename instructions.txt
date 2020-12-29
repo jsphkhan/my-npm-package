@@ -1,6 +1,8 @@
 My simple NPM package that I created to publish on NPM registry
 
 This is a public NPM package - https://www.npmjs.com/package/@jsphkhan/my-npm-package
+So you do not need a .npmrc to publish it. 
+npmrc is needed to publish provate packages by mentioning the authToken
 
 This is a scoped package - means I have scoped it to my NPM username to prevent conflicts
 Eg. somebody else might have already published a package with same name.
