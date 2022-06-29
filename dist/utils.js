@@ -12,5 +12,6 @@ function utilSum(a, b) {
 }
 
 function utilMultuply(a, b) {
+  console.log('** should tree shake **');
   return a * b;
 }
