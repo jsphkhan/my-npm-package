@@ -3,6 +3,7 @@
  */
 
 import _size from 'lodash/size';
+import { getAddOnNotFound, getFormData, isServer, isClient } from '@jsphkhan/esm-package';
 
 const REGEX = {
   VALID_NAME:
@@ -105,3 +106,16 @@ export const isValidName = (field) => {
 export const getCountryCodePrefix = (countryCode, isArabic) => {
   return isArabic ? `${countryCode}+` : `+${countryCode}`;
 };
+
+/**
+ * Runs functions from esm package
+ * Prints logs
+ * This is to test if tree shaking still works
+ * when an ESM package is imported by a CommonJS package
+ */
+export const getLogsFromESMPackage = () => {
+  console.log('*** isServer: ', isServer());
+  console.log('*** isClient: ', isClient());
+  console.log('*** getAddOnNotFound', getAddOnNotFound());
+  console.log('*** getFormData', getFormData());
+}
