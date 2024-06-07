@@ -144,11 +144,6 @@ modified the publish config to point to Github packages.
 
 
 
-NPM Access token
---------------------
-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
-
-
 *** Note ***
 -------------
 I have published v2.4.6 on NPM package registry
