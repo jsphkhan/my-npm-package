@@ -147,7 +147,9 @@ modified the publish config to point to Github packages.
 *** Note ***
 -------------
 I have published v2.4.6 on NPM package registry
-v2.4.7 & v2.4.8 also
+v2.4.7 , v2.4.8, v2.4.9 also
 
-v2.4.7 is CommonJS
-v2.4.8 is ESM enabled
+v2.4.7 is CommonJS: CommonJS module consuming ESM module will not tree shake
+v2.4.8 & v2.4.9 is ESM enabled: ESM module consuming ESM module will tree shake
+
+https://github.com/rollup/rollup/issues/663
