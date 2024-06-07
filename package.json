@@ -2,14 +2,17 @@
   "name": "@jsphkhan/my-npm-package",
   "version": "2.4.7",
   "description": "My first NPM package",
+  "sideEffects": false,
   "main": "dist/index.js",
+  "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "jest ./_tests",
     "coverage": "jest --coverage ./_tests",
-    "build": "babel src -d dist",
+    "build:commonjs": "babel src -d dist",
+    "build:esm": "npm run build:commonjs && BABEL_ENV=esm babel src --out-dir dist/esm --extensions .ts,.js --copy-files",
     "lint": "eslint --fix"
   },
   "repository": {
@@ -26,6 +29,7 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
+    "babel-plugin-add-import-extension": "^1.6.0",
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.8.2",
     "husky": "^4.2.3",
@@ -52,9 +56,9 @@
     "express": "^4.17.1"
   },
   "peerDependencies": {
+    "@jsphkhan/esm-package": "1.3.0",
     "date-fns": "2.16.1",
     "date-fns-tz": "^1.1.4",
-    "lodash": "4.17.20",
-    "@jsphkhan/esm-package": "1.3.0"
+    "lodash": "4.17.20"
   }
 }
