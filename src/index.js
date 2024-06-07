@@ -3,7 +3,7 @@
  */
 
 import _size from 'lodash/size';
-import { getAddOnNotFound, getFormData, isServer, isClient } from '@jsphkhan/esm-package';
+import { getAddOnNotFound, findQitafPoints, isServer, isClient } from '@jsphkhan/esm-package';
 
 const REGEX = {
   VALID_NAME:
@@ -117,5 +117,5 @@ export const getLogsFromESMPackage = () => {
   console.log('*** isServer: ', isServer());
   console.log('*** isClient: ', isClient());
   console.log('*** getAddOnNotFound', getAddOnNotFound());
-  console.log('*** getFormData', getFormData());
+  console.log('*** findQitafPoints', findQitafPoints(1000));
 }

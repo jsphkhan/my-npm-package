@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest ./_tests",
     "coverage": "jest --coverage ./_tests",
-    "build": "./node_modules/.bin/babel src -d dist",
+    "build": "babel src -d dist",
     "lint": "eslint --fix"
   },
   "repository": {
