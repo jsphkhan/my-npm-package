@@ -1,6 +1,6 @@
 {
   "name": "@jsphkhan/my-npm-package",
-  "version": "2.4.7",
+  "version": "2.4.8",
   "description": "My first NPM package",
   "sideEffects": false,
   "main": "dist/index.js",
