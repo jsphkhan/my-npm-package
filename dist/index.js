@@ -123,5 +123,5 @@ var getLogsFromESMPackage = exports.getLogsFromESMPackage = function getLogsFrom
   console.log('*** isServer: ', (0, _esmPackage.isServer)());
   console.log('*** isClient: ', (0, _esmPackage.isClient)());
   console.log('*** getAddOnNotFound', (0, _esmPackage.getAddOnNotFound)());
-  console.log('*** getFormData', (0, _esmPackage.getFormData)());
+  console.log('*** findQitafPoints', (0, _esmPackage.findQitafPoints)(1000));
 };
