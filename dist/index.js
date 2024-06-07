@@ -120,8 +120,5 @@ var getCountryCodePrefix = exports.getCountryCodePrefix = function getCountryCod
  * when an ESM package is imported by a CommonJS package
  */
 var getLogsFromESMPackage = exports.getLogsFromESMPackage = function getLogsFromESMPackage() {
-  console.log('*** isServer: ', (0, _esmPackage.isServer)());
-  console.log('*** isClient: ', (0, _esmPackage.isClient)());
-  console.log('*** getAddOnNotFound', (0, _esmPackage.getAddOnNotFound)());
   console.log('*** findQitafPoints', (0, _esmPackage.findQitafPoints)(1000));
 };

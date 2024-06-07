@@ -3,7 +3,7 @@
  */
 
 import _size from 'lodash/size';
-import { getAddOnNotFound, findQitafPoints, isServer, isClient } from '@jsphkhan/esm-package';
+import { findQitafPoints } from '@jsphkhan/esm-package';
 var REGEX = {
   VALID_NAME: /^[\u0621-\u064A\u0660-\u0669a-zA-Z]+([\s][\u0621-\u064A\u0660-\u0669a-zA-Z]+)*$/
 };
@@ -113,8 +113,5 @@ export var getCountryCodePrefix = function getCountryCodePrefix(countryCode, isA
  * when an ESM package is imported by a CommonJS package
  */
 export var getLogsFromESMPackage = function getLogsFromESMPackage() {
-  console.log('*** isServer: ', isServer());
-  console.log('*** isClient: ', isClient());
-  console.log('*** getAddOnNotFound', getAddOnNotFound());
   console.log('*** findQitafPoints', findQitafPoints(1000));
 };
